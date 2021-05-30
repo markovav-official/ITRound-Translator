@@ -62,7 +62,7 @@ class Translator:
             paragraph_res = []
             chunks = []
             for word in paragraph.split():
-                if len(chunks) == 0 or len(chunks[-1]) > 900:
+                if len(chunks) == 0 or len(chunks[-1]) > 800:
                     chunks.append(word)
                 else:
                     chunks[-1] += ' ' + word
